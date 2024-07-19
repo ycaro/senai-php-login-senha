@@ -28,7 +28,6 @@ Este repositório contém um sistema de login e senha desenvolvido durante o cur
    git clone https://github.com/ycaro/senai-projeto-final.git
 
 2. Configure o servidor web e a base de dados:
-
 Crie um banco de dados e importe o arquivo db-senai.sql localizado na raiz do projeto.
 Atualize as configurações de conexão com o banco de dados no arquivo Tabela.php (classes/Tabela.php).
 Inicie o servidor web e acesse o sistema através do navegador.

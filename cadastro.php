@@ -42,7 +42,7 @@
 
       //SE O RETORNO NÃO FOR UM OBJETO SIGNIFICA QUE ELE NÃO ENCONTROU NO BANCO DE DADOS
       if(!is_object($retornoUsuario)){
-        $dados = [ 'nome'=>$_POST['nome'], 'usuario'=>$_POST['usuario'], 'senha'=>$_POST['senha']];
+        $dados = [ 'nome'=>$_POST['nome'], 'usuario'=>$_POST['usuario'], 'senha'=>md5($_POST['senha'])];
 
         $obUsuario->setUsuario($dados);
 

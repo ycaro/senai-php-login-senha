@@ -31,7 +31,7 @@
       $mensagem = 'Preencha os campos obrigatórios';
     }else{
       //MONTO A CONDIÇÃO PARA BUSCAR NO BANCO DE DADOS SE O USUARIO EXISTE
-      $condicao = 'usuario = "'.$_POST['usuario'].'" AND senha = "'.$_POST['senha'].'"';
+      $condicao = 'usuario = "'.$_POST['usuario'].'" AND senha = "'.md5($_POST['senha']).'"';
       $obUsuario      = new Usuario;
       $retornoUsuario = $obUsuario->getUsuario($condicao);
 
