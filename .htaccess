@@ -1,0 +1,5 @@
+RewriteEngine on
+
+#REGRAS DE LOGIN
+RewriteRule ^login/?$ ./index.php?action=login [QSA,NC]
+RewriteRule ^cadastro/?$ ./cadastro.php?action=cadastro [QSA,NC]
